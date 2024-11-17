@@ -58,6 +58,11 @@ keymap.set("n", "<C-w><right>", "<C-w>>")
 keymap.set("n", "<C-w><up>", "<C-w>+")
 keymap.set("n", "<C-w><down>", "<C-w>-")
 
+-- Tab
+keymap.set("n", "tc", ":tabclose<Return>", opts)
+keymap.set("n", "to", ":tabonly<Return>", opts)
+
+keymap.set("n", "<leader>rn", ":IncRename ")
 -- Diagnostics
 keymap.set("n", "<C-j>", function()
   vim.diagnostic.goto_next()
